@@ -1,0 +1,48 @@
+Recursion:
+
+1) Recursion is a function structure that makes a call to itself. It operates
+using a call stack to keep track of the order of function calls (LIFO). It is
+an alternative to iteration.
+
+2) It is necessary to have a base case in order to exit out of a recursive function,
+otherwise the function would be called forever.
+
+Graphs:
+
+1) A graph is a set of nodes connected to one another by edges. Nodes can 
+connect to many others, and nodes can form closed loops within a larger graph.
+
+
+2) Trees have a hierarchy. Graphs are a more flexible structure 
+and have no implicit hierarchy. Graphs can be directed or undirected.
+
+3) A social network like friends on facebook.
+
+Performance of Different Data Structures:
+========================================
+Python List: O(n), O(n), O(1)
+Linked List: O(n), O(n), O(1), O(1), O(1), O(n)
+Doubly-Linked List: O(n), O(n), O(1), O(1), O(1), O(1)
+Queue (as Array): O(1), O(n)
+Queue (as LL or DLL): O(1), O(1)
+Stack (as Array, LL, or DLL): O(1), O(1)
+Deque (As DLL): O(1), O(1), O(1), O(1)   
+
+Set: O(1), O(1), O(1), O(n), medium
+Binary Search Tree: O(logn), O(logn), O(logn), O(n), little
+Tree: O(n), O(1), O(1), O(n), little
+
+Sorting:
+
+1) Bubble sort "bubbles" the largest item in a list over to the right. It 
+starts on the left and successively compares pairs of items, making swaps
+so that the largest number ends up on the end. It then repeats, starting from the left, until all items are sorted. Each round you have 1 less swap to make because you are assured that everything moved to the right is perfectly sorted. 
+
+2) Mergesort works by splitting a list in half recursively until it reaches
+a single item (which is inherently sorted). On the way back up the call stack,
+mergesort compares the left and right sub-lists and merges them so they are sorted.
+
+3) Quicksort works by selecting a random number from the list - this becomes
+the pivot. The algorithm then moves all numbers less than the pivot to the left,
+and all numbers greater than the pivot to the right. The algorithm repeats recursively, finding new pivots to the left and right of the last pivot and sorting the sub-lists until it reaches the base case of a single item. At this point,
+the whole list is sorted.
